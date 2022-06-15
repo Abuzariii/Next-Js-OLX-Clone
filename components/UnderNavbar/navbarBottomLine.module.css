@@ -2,11 +2,13 @@
     float: left;
     overflow: hidden;
 }
+
 .dropbtn {
+    position: absolute;
     background: none;
     border: none;
-    margin-left: 8vw;
-    margin-top: 9rem;
+    left: 8vw;
+    top: 8.9rem;
     text-transform: uppercase;
     color: #002f34;
     font-weight: 550;
@@ -34,7 +36,7 @@
     box-shadow: 4px 8px 16px 4px rgba(0, 0, 0, 0.2);
     z-index: 1;
     margin-left: 8rem;
-    top: 166px;
+    top: 10.2rem;
 }
 
 .dropdown:hover .dropdown_content {
@@ -106,4 +108,47 @@
     transition: 300ms ease all;
     transform: rotate(-136deg);
     -webkit-transform: rotate(-136deg);
+}
+.label {
+    position: absolute;
+    left: 20rem;
+    color: rgb(85, 80, 80);
+    font-weight: 500;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 9rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.label:hover {
+    cursor: pointer;
+    color: rgb(64, 64, 244);
+}
+
+#label1 {
+    margin-left: 3.1%;
+}
+
+#label2 {
+    margin-left: 11.4%;
+}
+
+#label3 {
+    margin-left: 15.2%;
+}
+
+#label4 {
+    margin-left: 22.3%;
+}
+
+#label5 {
+    margin-left: 27.8%;
+}
+
+#label6 {
+    margin-left: 36.5%;
+}
+
+#label7 {
+    margin-left: 42.3%;
 }

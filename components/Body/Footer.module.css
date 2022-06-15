@@ -1,9 +1,10 @@
 .footer {
-    margin-top: 13.5%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
     padding: 0;
-    margin-left: 0;
 }
-
 .mainDiv {
     background: rgb(235, 238, 239);
     display: flex;

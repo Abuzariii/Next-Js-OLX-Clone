@@ -87,7 +87,6 @@ export default function Footer() {
                 className={classes.appLinksImg}
                 src={"/images/AppStore.JPG"}
                 alt="App Store"
-                class="ac2bfae3"
               />
             </a>
             <a
@@ -100,7 +99,6 @@ export default function Footer() {
                 className={classes.appLinksImg}
                 src={"/images/PlayStore.JPG"}
                 alt="Google Play"
-                class="ac2bfae3"
               />
             </a>
             <a
@@ -113,7 +111,6 @@ export default function Footer() {
                 className={classes.appLinksImg}
                 src={"/images/HuaweiStore.JPG"}
                 alt="App Gallery"
-                class="ac2bfae3"
               />
             </a>
           </div>

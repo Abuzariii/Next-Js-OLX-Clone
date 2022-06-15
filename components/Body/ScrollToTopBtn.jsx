@@ -1,6 +1,6 @@
 import classes from "./ScrollToTopBtn.module.css";
 import React, { useState, useEffect } from "react";
-import { visibleStyles } from "./stylesFunctions";
+import { visibleStyles } from "./utils";
 
 export default function ScrollToTopBtn() {
   const [showTopBtn, setShowTopBtn] = useState(false);

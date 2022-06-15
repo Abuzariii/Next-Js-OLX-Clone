@@ -1,9 +1,9 @@
 import classes from "./Navbar.module.css";
+import Link from "next/link";
 import { BiSearch } from "react-icons/bi";
 import { useState } from "react";
 import LogInModal from "./LogInModal";
 import LoginDropdown from "./LoginDropdown";
-import Dropdown from "./Dropdown";
 import { IconContext } from "react-icons";
 import {
   clickedStyle,
@@ -41,12 +41,15 @@ export default function Navbar() {
       <nav className={classes.nav}>
         <ul className={classes.ul}>
           <li className={classes.logo}>
-            <img src={"/images/download.png"}></img>
+            <Link href="/">
+              {/* <img src={"/images/download.png"}></img> */}
+              <img src={"/images/olx-logo.JPG"}></img>
+            </Link>
           </li>
           <a href="https://www.olx.com.pk/motors/" style={{ width: "100px" }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="auto"
+              width="100%"
               height="24"
               viewBox="0 0 66 20"
               alt="OLX Motors"
@@ -62,7 +65,7 @@ export default function Navbar() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="auto"
+              width="100%"
               height="24"
               viewBox="0 0 73 20"
               alt="OLX Property"
@@ -79,9 +82,9 @@ export default function Navbar() {
 
           <input
             type="search"
-            spellcheck="false"
+            spellCheck="false"
             className={classes.search}
-            autocomplete="free-text-search"
+            autoComplete="free-text-search"
             placeholder="  Find Cars, Mobile Phones and more..."
           ></input>
           <div className={classes.icon}>
@@ -120,7 +123,6 @@ export default function Navbar() {
               }}
             >
               <img
-                class="_0559c5ad"
                 src="	https://www.olx.com.pk/assets/iconProfilePicture.7975761176487dc62e25536d9a36a61d.png"
                 alt="User profile"
               />
@@ -136,28 +138,6 @@ export default function Navbar() {
           </div>
         </ul>
       </nav>
-      <Dropdown></Dropdown>
-      <label className={classes.label} id={classes.label1}>
-        Mobile Phones
-      </label>
-      <label className={classes.label} id={classes.label2}>
-        Cars
-      </label>
-      <label className={classes.label} id={classes.label3}>
-        Motorcycles
-      </label>
-      <label className={classes.label} id={classes.label4}>
-        Houses
-      </label>
-      <label className={classes.label} id={classes.label5}>
-        TV-Video-Audio
-      </label>
-      <label className={classes.label} id={classes.label6}>
-        Tablets
-      </label>
-      <label className={classes.label} id={classes.label7}>
-        Lands and Plots
-      </label>
     </>
   );
 }
